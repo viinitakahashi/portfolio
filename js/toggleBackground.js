@@ -1,12 +1,14 @@
 const check = document.getElementById("checkbox");
 const sun = document.querySelector(".bi-brightness-high-fill");
 const header = document.querySelector("header");
-const textos = document.querySelectorAll("button, p, h1, h2, h3, span, cite, a, q, li");
+const textos = document.querySelectorAll("button, p, h1, h2, h3, span, cite, a, q, li, i");
 const menu = document.querySelector('.menu');
 const spanDropdown = document.querySelector('.selected');
+const menuMobile = document.querySelector('.nav-list')
 
 check.addEventListener("change", () => {
   document.body.classList.toggle("dark");
+  menuMobile.classList.toggle("dark");
   spanDropdown.classList.toggle("dark-color");
   header.classList.toggle("dark");
   sun.classList.toggle("white-color");

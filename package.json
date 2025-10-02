@@ -10,7 +10,7 @@
     "start": "sass --watch src/scss:src/css"
   },
   "devDependencies": {
-    "live-server": "^1.2.2",
+    "live-server": "^1.2.0",
     "sass": "^1.90.0",
     "vite": "^7.1.2"
   }

@@ -109,7 +109,7 @@ i {
 
 mark {
   font-size: 2.5rem !important;
-  color: #0074BD !important;
+  color: #9C4DFF !important;
 }
 
 header {
@@ -145,25 +145,26 @@ nav {
   border-radius: 50px;
 }
 .nav-list li a:hover {
-  border: 1px solid #0074BD !important;
+  border: 1px solid #9C4DFF !important;
 }
 
 .active-link {
   color: #00BFFF;
-  border: 1px solid #0074BD !important;
-  color: #0074BD;
+  border: 1px solid #9C4DFF !important;
+  color: #9C4DFF;
 }
 
 .mobile-menu {
   margin-left: -110px;
   cursor: pointer;
   display: none !important;
+  background-color: transparent !important;
 }
 
 .mobile-menu div {
   width: 32px;
   height: 2px;
-  background-color: #1E1E1E;
+  background-color: #9C4DFF;
   margin: 8px;
   transition: 0.3s;
 }
@@ -205,7 +206,7 @@ nav {
     width: 80vw;
     height: 100vh;
     background-color: #fff;
-    border: 1px solid #1E1E1E;
+    border: 1px solid #9C4DFF;
     flex-direction: column;
     align-items: center;
     justify-content: start;
@@ -226,7 +227,7 @@ nav {
     opacity: 0; /* some até a animação rodar */
   }
   .nav-list li a {
-    color: #1E1E1E !important;
+    color: #1E1E1E;
   }
   .mobile-menu {
     display: block !important;
@@ -261,7 +262,7 @@ h1 {
   margin-left: 50px;
   height: 260px;
   width: 260px;
-  background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg");
+  background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -292,7 +293,7 @@ h1 {
   content: "|";
   width: 20px;
   padding: 2px;
-  color: #0074BD;
+  color: #9C4DFF;
 }
 .home .home_text p {
   font-size: 1.7rem;
@@ -329,7 +330,7 @@ h1 {
 .tools .tools-information h2 {
   padding: 20px;
   text-transform: uppercase;
-  color: #0074BD !important;
+  color: #9C4DFF !important;
   font-weight: 800;
   margin-bottom: 30px;
   font-size: 1.8rem;
@@ -414,7 +415,7 @@ h1 {
   right: 0;
 }
 .dropdown .select {
-  border: 1px solid #0074BD;
+  border: 1px solid #9C4DFF;
   border-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -424,7 +425,7 @@ h1 {
   padding: 18px;
   margin-top: 10px;
   border-radius: 2px;
-  background-color: #0074BD;
+  background-color: #9C4DFF;
   border-radius: 50px;
 }
 .dropdown .select span {
@@ -436,12 +437,12 @@ h1 {
   align-items: center;
 }
 .dropdown .select.select-clicked {
-  border: 1px solid #0074BD;
+  border: 1px solid #9C4DFF;
   border-radius: 10px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 0px;
-  border: 1px solid #0074BD;
-  background-color: #0074BD;
+  border: 1px solid #9C4DFF;
+  background-color: #9C4DFF;
 }
 .dropdown .caret {
   width: 0;
@@ -453,7 +454,7 @@ h1 {
   transform: rotate(180deg);
 }
 .dropdown .menu {
-  border: 1px solid #0074BD;
+  border: 1px solid #9C4DFF;
   border-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -476,7 +477,7 @@ h1 {
   border: 1px solid transparent;
 }
 .dropdown .menu li:hover {
-  border: 1px solid #0074BD;
+  border: 1px solid #9C4DFF;
 }
 .dropdown .menu.menu-open {
   display: block;
@@ -501,7 +502,7 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid #0074BD;
+  border: 1px solid #9C4DFF;
   border-radius: 20px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -518,7 +519,7 @@ h1 {
   border-radius: 50%;
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;
-  background-color: #0074BD;
+  background-color: #9C4DFF;
   position: absolute;
   left: 5px;
   top: 5px;
@@ -530,10 +531,9 @@ h1 {
 }
 
 .container {
-  display: flex;
-  align-items: center;
+  display: flex !important;
+  align-items: center !important;
   justify-content: center;
-  min-height: 100vh;
 }
 
 .card-wrapper {
@@ -550,9 +550,9 @@ h1 {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
-  width: 400px;
+  min-width: 200px;
+  max-width: 550px !important;
   display: block;
-  padding: 18px;
   border-radius: 12px;
   text-decoration: none;
   border: 2px solid transparent;
@@ -565,7 +565,7 @@ h1 {
 }
 
 .card-list .card-item .card-link:hover {
-  border-color: #0074BD;
+  border-color: #9C4DFF;
 }
 
 .card-list .card-link .card-image {
@@ -574,6 +574,15 @@ h1 {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px;
+  transition: 0.4s;
+}
+
+.card-list .card-link:hover .card-image {
+  scale: 1.02;
+}
+
+.card-link_text {
+  padding: 50px 20px;
 }
 
 .badge-icons {
@@ -599,6 +608,7 @@ h1 {
   gap: 5px;
   transition: 0.4s ease;
   background-color: #1E1E1E;
+  border: 1px solid transparent;
   color: #fff;
 }
 
@@ -607,8 +617,8 @@ h1 {
 }
 
 .card-item:hover .badge {
-  background-color: #0074BD !important;
-  border: 1px solid #0074BD;
+  background-color: #9C4DFF !important;
+  border: 1px solid #9C4DFF;
   color: #fff;
 }
 
@@ -633,12 +643,12 @@ h2 {
   margin: 30px 0 5px;
   background: none;
   cursor: pointer;
-  border: 2px solid #0074BD;
+  border: 2px solid #9C4DFF;
   transition: 0.4s ease;
 }
 
 .card-list .card-link:hover .card-button {
-  background: #0074BD;
+  background: #9C4DFF;
 }
 
 .card-list .card-link:hover .card-button i {
@@ -654,14 +664,14 @@ i {
 }
 
 .card-item:hover i {
-  color: #0074BD;
+  color: #9C4DFF;
 }
 
 .card-wrapper .swiper-pagination-bullet {
   height: 15px;
   width: 15px;
   opacity: 0.6;
-  background: #0074BD;
+  background: #9C4DFF;
   margin-top: -50px;
 }
 
@@ -670,12 +680,12 @@ i {
 }
 
 .card-wrapper .swiper-slide-button {
-  color: #0074BD;
+  color: #9C4DFF;
   margin-top: -50px;
 }
 
 .acessar {
-  color: #0074BD;
+  color: #9C4DFF;
   padding: 8px 14px;
   font-weight: 600;
   border-radius: 6px;
@@ -768,5 +778,8 @@ i {
   .title-section {
     font-size: 1.5rem !important;
     text-align: center;
+  }
+  .card-wrapper {
+    margin-left: -10px;
   }
 }/*# sourceMappingURL=main.css.map */
