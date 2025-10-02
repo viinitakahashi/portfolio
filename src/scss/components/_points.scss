@@ -1,0 +1,45 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+
+.table-points {
+  color: #fff !important;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin-top: -70px;
+  width: 95%;
+  height: 130px;
+  padding: 18px;
+
+}
+
+.section-table-points {
+  padding: 0 100px;
+
+  .points {
+    h1 {
+      font-size: variables.$font-size-text-caption;
+      animation: blinks 1.3s infinite;
+      color: variables.$color-primary;
+      font-weight: 800;
+    }
+
+    p {
+      color: variables.$color-background-dark;
+      font-size: 1.5rem;
+    }
+  }
+}
+
+// ==========================
+// Media Queries
+// ==========================
+@media screen and (max-width: 860px) {
+  .table-points {
+    margin-top: 400px;
+    flex-direction: column !important;
+    gap: 60px;
+    box-shadow: none !important;
+  }
+}

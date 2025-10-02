@@ -1,0 +1,82 @@
+@use "../abstracts/variables";
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+h1, h2, a, li, button {
+font-family: "Source Sans 3", sans-serif;
+}
+
+span, cite {
+  color: variables.$color-primary;
+}
+
+mark {
+  font-weight: 600;
+  color: variables.$color-text-mark;
+  background-color: transparent;
+}
+
+
+
+// button.scss
+.select {
+    text-transform: uppercase;
+}
+
+.selected {
+    color: variables.$color-primary;
+    font-weight: 600;
+}
+
+.select-clicked {
+    color: #fff !important;
+}
+
+.menu {
+    list-style: none;
+}
+
+li {
+    color: variables.$color-primary;
+    font-weight: 700;
+    &:hover {
+        color: variables.$color-primary;
+    }
+}
+
+i {
+  color: variables.$color-text;
+}
+
+.bi {
+    color: variables.$color-primary;
+}
+
+.bi-telegram {
+    font-size: 1.5rem;
+}
+
+.bi-brightness-high-fill,
+.bi-moon-stars-fill {
+  font-size: 1.1em;
+  color: #222;
+}
+
+// projects
+
+.projects {
+    .projects_text {
+    font-size: variables.$font-size-text-caption;
+
+    h2 {
+        text-transform: uppercase;
+        color: variables.$color-primary;
+    }
+}
+    .projects_search {
+        button {
+            color: #fff;
+            text-transform: uppercase;
+        }
+    }
+}

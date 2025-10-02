@@ -1,0 +1,38 @@
+@use "../abstracts/variables";
+
+body {
+  box-sizing: border-box;
+  transition: background 0.4s linear;
+  background: variables.$color-background;
+
+
+  &::-webkit-scrollbar {
+    width: 15px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: variables.$color-primary;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  top: 0;
+  color: variables.$color-text;
+}
+
+.bi {
+  padding-right: 5px;
+  font-size: 1.1rem;
+  color: #fff !important;
+}
+
+i {
+  font-size: 1.3rem;
+}
+
+mark {
+  font-size: 2.5rem !important;
+  color: variables.$color-secondary !important;
+}

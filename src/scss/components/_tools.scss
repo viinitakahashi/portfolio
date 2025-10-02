@@ -1,0 +1,85 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+
+/* tools */
+.tools {
+  padding: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: variables.$section-margin;
+
+  .tools-information {
+
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width: 30%;
+    font-size: variables.$font-size-paragraph !important;
+
+    h2 {
+      padding: 20px;
+
+      text-transform: uppercase;
+      color: variables.$color-secondary !important;
+      font-weight: 800;
+     
+      margin-bottom: 30px;
+      font-size: 1.8rem;
+    }
+  }
+
+  .tools-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tools-img {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-bottom: 18px;
+    margin: auto !important;
+
+    img {
+      &:hover {
+        transform: translateY(-3px);
+      }
+    }
+  }
+
+  .tools-text {
+    margin-top: calc(variables.$section-margin / 3);
+    text-align: center !important;
+
+    mark {
+      text-transform: uppercase;
+    }
+  }
+}
+
+// Media Queries
+@media screen and (max-width: 700px) {
+  .tools {
+    .tools-information {
+      width: 80vh;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .tools {
+    gap: 100px;
+    margin-top: 350px;
+
+    .tools-information {
+      width: 100vh;
+      margin: auto;
+    }
+  }
+}

@@ -1,0 +1,95 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+
+mark {
+  font-family: "Bebas Neue", sans-serif !important;
+  font-weight: 600;
+  background-color: transparent;
+  color: variables.$color-primary;
+  font-size: 1.6rem;
+}
+
+h1 {
+  font-weight: 600;
+  font-family: "Bebas Neue", sans-serif !important;
+}
+
+.home {
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap !important;
+  align-content: center;
+  flex-flow: row-reverse;
+  align-items: center;
+  width: 95vw;
+  margin: auto;
+
+  .home_circle {
+    margin-top: -300px;
+    margin-left: 50px;
+    height: 260px;
+    width: 260px;
+    background-image: url('https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg');
+    // background-color: variables.$color-primary;
+    // border-radius: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-right: 85px;
+
+    img {
+      margin-top: 40px;
+      margin-left: -160px;
+      width: 380px;
+    }
+  }
+
+  .home_text {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 50%;
+    margin-top: -150px;
+
+    h1 {
+      font-size: variables.$font-size-text-title;
+      color: variables.$color-primary;
+      margin-bottom: 15px;
+    }
+
+    h2 {
+      &::before {
+        content: '|';
+        width: 20px;
+        padding: 2px;
+        color: variables.$color-secondary;
+      }
+      margin-bottom: 20px;
+      color: variables.$color-text;
+    }
+    
+    p {
+      font-size: 1.7rem;
+
+    }
+
+    .nav_button {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 50px;
+
+      a {
+        color: variables.$color-primary;
+        padding: 10px 20px;
+        border: 1px solid variables.$color-primary;
+      }
+    }
+  }
+}
+
+
+
+// ==========================
+// Media Queries
+// ==========================

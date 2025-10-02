@@ -1,0 +1,169 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+
+
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.card-wrapper {
+    margin: 0 60px 35px;
+    padding: 20px 10px;
+    overflow: hidden;
+}
+
+.card-list .card-item {
+    list-style: none;
+}
+
+.card-list .card-item .card-link {
+    user-select: none;
+    width: 400px;
+    display: block;
+  
+    padding: 18px;
+    border-radius: 12px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+    transition: 0.3s ease;
+}
+
+.card-list .card-item .card-link:active {
+    cursor: grabbing;
+}
+
+.card-list .card-item .card-link:hover {
+    border-color: variables.$color-secondary;
+}
+
+.card-list .card-link .card-image {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.badge-icons {
+    flex-wrap: wrap;
+    display: flex;
+    gap: 10px;
+}
+
+.card-list .card-link .badge {
+    color: #fff;
+    padding: 8px 20px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin-top: 10px;
+    width: fit-content;
+    border-radius: 50px;
+}
+
+.badge {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: variables.$second-transition ease;
+    background-color: variables.$color-primary;
+    color: #fff;
+}
+
+.badge p  {
+    color: #fff !important;
+}
+
+.card-item:hover .badge {
+    background-color: variables.$color-secondary !important;
+    border: 1px solid variables.$color-secondary;
+    color: #fff;
+}
+
+.card-item:hover i {
+    color: #fff !important;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+
+.card-list .card-link .card-title {
+    font-size: 1.19rem;
+    color: #000;
+    font-weight: 600;
+}
+
+.card-list .card-link .card-button {
+    height: 35px;
+    width: 35px;
+    
+    border-radius: 50%;
+    margin: 30px 0 5px;
+    background: none;
+    cursor: pointer;
+    border: 2px solid variables.$color-secondary;
+    transition: 0.4s ease;
+}
+
+.card-list .card-link:hover .card-button {
+    background: variables.$color-secondary;
+}
+
+.card-list .card-link:hover .card-button i{
+    color: #fff !important;
+}
+
+button .bi {
+    color: variables.$color-primary !important;
+}
+
+i {
+    transition: 0.3s ease;
+}
+
+.card-item:hover i {
+    color: variables.$color-secondary;
+}
+
+.card-wrapper .swiper-pagination-bullet {
+    height: 15px;
+    width: 15px;
+    opacity: 0.6;
+    background: variables.$color-secondary;
+    margin-top: -50px;
+}
+
+.card-wrapper .swiper-pagination-bullet-active {
+    opacity: 1;
+}
+
+.card-wrapper .swiper-slide-button {
+    color: variables.$color-secondary;
+    margin-top: -50px;
+}
+
+// 
+.acessar{
+color: variables.$color-secondary;
+  padding: 8px 14px;
+  font-weight: 600;
+  border-radius: 6px;
+  backdrop-filter: blur(0);
+  pointer-events: none; 
+  opacity: 0;
+  filter: blur(2px);
+  transition: opacity 320ms ease, filter 320ms ease, transform 320ms cubic-bezier(.2,.8,.2,1);
+}
+
+.card-item:hover .acessar,
+.card-item:focus .acessar,
+.card-item:focus-within .acessar{
+  opacity: 1;
+  filter: blur(0);
+  pointer-events: auto;
+}
