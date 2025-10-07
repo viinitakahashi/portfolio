@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JV - Portfólio</title>
+    <link rel="icon" href="./public/globe.png" type="image/x-icon">
     <link rel="stylesheet" href="./src/scss/main.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
@@ -27,8 +28,8 @@
                 <li>
                     <input type="checkbox" class="checkbox" id="checkbox">
                     <label for="checkbox" class="label">
-                        <i class="bi bi-brightness-high-fill"></i>
-                        <i class="bi bi-moon-stars-fill"></i>
+                        <i class="bi bi-sun"></i>
+                        <i class="bi bi-moon-stars"></i>
                         <div class="circle"></div>
                     </label>
                 </li>
@@ -44,32 +45,46 @@
     <main>
         <section class="home">
             <div class="home_circle">
-                <img src="https://png.pngtree.com/png-vector/20250110/ourmid/pngtree-amazing-spider-spider-man-png-image_14393813.png" alt="">
+                <img src="https://png.pngtree.com/png-clipart/20240826/original/pngtree-cartoon-programmer-png-image_15854229.png" alt="">
             </div>
             <div class="home_text">
                 <h1>Desenvolvedor <br> <mark>Full-Stack</mark> & <mark>Mobile</mark></h1>
                 <h2>João Vinícius Fernandes</h2>
                 <div class="nav_button">
                 <div class="dropdown">
-                    <div class="select">
-                        <span class="selected"><i class="bi bi-telegram"></i>Entrar em Contato</span>
+                    <div class="select" id="toggleButton">
+                        <span class="selected">
+                            <span id="arrow" class="arrow">▼</span>
+                            Entrar em Contato
+                        </span>
                         <div class="caret"></div>
                     </div>
                     <ul class="menu" id="menu">
-                        <li>
-                            Whatsapp
-                        </li>
-                        <li>
+                        <div class="menu-links">
+
+                            <a href="https://www.linkedin.com/in/joavincus/" class="contact-link">
+                                <i class="bi bi-linkedin"></i>
+                                Linkedin
+                            </a>
+                        
+                            <a href="#" class="contact-link">
+                                <i class="bi bi-whatsapp"></i>
+                                Whatsapp
+                            </a>
+
+                        <a href="#" class="contact-link">
+                            <i class="bi bi-instagram"></i>
                             Instagram
-                        </li>
-                        <li>
-                            Linkedin
-                        </li>
+                        </a>
+                        </div>
+
                     </ul>
                 </div>
             </div>
                 <p></p>
                 <p>Técnico em informática, uno hardware e software para garantir o melhor desempenho e perfomance em uma aplicação.</p>
+                <br>
+                <a class="about-more-me" href=""><i class="bi bi-mortarboard"></i>Formação e Cursos</a>
         </section>
 
         <div class="section" style="display: flex; flex-direction: row; align-items: center; margin-left: 80px; margin-bottom: 50px;">
@@ -144,15 +159,13 @@
             </div>
         </div>
 
-                        <section class="tools">
+        <section class="tools">
             <div class="tools-information">
-                <h2>Liguagens de Programação</h2>
+                <h2>Linguagens de Programação</h2>
                 <div class="tools-container">
                     <div class="tools-img">
                         <img width="55px"
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" />
-                        <img width="55px"
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kotlin/kotlin-original.svg" />
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" />
                         <img width="55px"
                             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg" />
                         <img width="55px"
@@ -161,8 +174,7 @@
                 </div>
 
                 <div class="tools-text">
-                    <p>Ipsum dolor sit amet consectetur adipisicing elit. Sunt dolores at blanditiis accusantium
-                        temporibus nemo ut ipsum odio voluptas minima accusamus modi amet delectusAb?</p>
+                    <p>Lorem ipsum <mark class="mark-tools-info">C#</mark> sit amet <mark class="mark-tools-info">SQL</mark>, adipisicing elit. <mark class="mark-tools-info">GraphQL</mark> nulla doloremque eum ad tempora ullam earum incidunt consectetur, facere, enim esse <mark class="mark-tools-info">javaScript</mark> excepturi! Accusamus cupiditate error blanditiis id <mark class="mark-tools-info">TypeScript</mark> consectetur?</p>
                 </div>
             </div>
             </div>
@@ -172,34 +184,33 @@
                 <div class="tools-container">
                     <div class="tools-img">
                         <img width="50px"
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg" />
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg" />
                         <img width="50px"
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg" />
-                        <img width="55px"
                             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
+                        <img width="55px"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dot-net/dot-net-plain-wordmark.svg" />
                         <img width="50px"
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nestjs/nestjs-original.svg" />
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" />
                         <img width="55px"
                             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg" />
                     </div>
 
                     <div class="tools-text">
-                        <p>Ipsum dolor sit amet consectetur adipisicing elit. Sunt dolores at blanditiis accusantium
-                            temporibus nemo ut ipsum odio voluptas minima accusamus modi amet delectusAb?</p>
+                          <p>Lorem ipsum <mark class="mark-tools-info">DotNet</mark> sit amet <mark class="mark-tools-info">Angular</mark>, adipisicing elit. <mark class="mark-tools-info">Microsoft .Net</mark> nulla doloremque eum ad tempora ullam earum incidunt consectetur, facere, enim esse <mark class="mark-tools-info">Nestj.js</mark> excepturi! Accusamus cupiditate error blanditiis id <mark class="mark-tools-info">SASS CSS</mark> consectetur?</p>
                     </div>
                 </div>
             </div>
 
             <div class="tools-information">
-                <h2>Softwares & Ferramentas</h2>
+                <h2>Softwares <br> & Ferramentas</h2>
                 <div class="tools-container">
                     <div class="tools-img">
+                        <img width="53px"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/visualstudio/visualstudio-original.svg" />
                         <img width="55px"
                             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" />
                         <img width="55px"
                             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" />
-                        <img width="55px"
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jetbrains/jetbrains-original.svg" />
                         <img width="55px"
                             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" />
                         <img width="55px"
@@ -207,8 +218,7 @@
                     </div>
                 </div>
                 <div class="tools-text">
-                    <p>Ipsum dolor sit amet consectetur adipisicing elit. Sunt dolores at blanditiis accusantium
-                        temporibus nemo ut ipsum odio voluptas minima accusamus modi amet delectusAb?</p>
+                     <p>Lorem ipsum <mark class="mark-tools-info">Visual Studio</mark> sit amet <mark class="mark-tools-info">Visual Studio Code</mark>, adipisicing elit. <mark class="mark-tools-info">Figma</mark> nulla doloremque eum ad tempora ullam earum incidunt consectetur, facere, enim esse <mark class="mark-tools-info">MySQL</mark> excepturi! Accusamus cupiditate error blanditiis id <mark class="mark-tools-info">Docker</mark> consectetur?</p>
                 </div>
             </div>
             </div>

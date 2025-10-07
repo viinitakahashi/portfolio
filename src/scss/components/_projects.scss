@@ -25,8 +25,16 @@
     border-radius: 12px;
     text-decoration: none;
     border: 2px solid transparent;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 10px variables.$color-secondary;
     transition: 0.3s ease;
+}
+
+.card-item {
+    filter: blur(0.4px);
+}
+
+.card-item:hover {
+    filter: blur(0px);
 }
 
 .card-list .card-item .card-link:active {
@@ -35,7 +43,9 @@
 
 .card-list .card-item .card-link:hover {
     border-color: variables.$color-secondary;
+    scale: 1.040;
 }
+
 
 .card-list .card-link .card-image {
     width: 100%;
@@ -43,10 +53,6 @@
     object-fit: cover;
     border-radius: 10px;
     transition: variables.$second-transition;
-}
-
-.card-list .card-link:hover .card-image {
-    scale: 1.020;
 }
 
 .card-link_text {
@@ -125,6 +131,7 @@ h2 {
 }
 
 button .bi {
+    margin-left: 3px;
     color: variables.$color-primary !important;
 }
 
@@ -149,9 +156,18 @@ i {
 }
 
 .card-wrapper .swiper-slide-button {
-    color: variables.$color-secondary;
+    padding: 10px;
+    border: 1px solid variables.$color-secondary;
+    border-radius: 100%;
     margin-top: -50px;
+    transition: variables.$second-transition ease;
+
+    &:hover {
+        color: #fff !important;
+        background-color: variables.$color-secondary;
+    }
 }
+
 
 // 
 .acessar{

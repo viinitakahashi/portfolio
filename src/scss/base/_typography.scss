@@ -1,9 +1,9 @@
 @use "../abstracts/variables";
 
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 h1, h2, a, li, button {
-font-family: "Source Sans 3", sans-serif;
+font-family: "Inter", sans-serif;
 }
 
 span, cite {
@@ -52,14 +52,10 @@ i {
     color: variables.$color-primary;
 }
 
-.bi-telegram {
-    font-size: 1.5rem;
-}
-
 .bi-brightness-high-fill,
 .bi-moon-stars-fill {
   font-size: 1.1em;
-  color: #222;
+  color: variables.$color-primary;
 }
 
 // projects

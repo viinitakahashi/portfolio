@@ -11,7 +11,6 @@
   margin-bottom: variables.$section-margin;
 
   .tools-information {
-
     padding: 2px;
     display: flex;
     align-items: center;
@@ -22,13 +21,15 @@
 
     h2 {
       padding: 20px;
-
-      text-transform: uppercase;
       color: variables.$color-secondary !important;
       font-weight: 800;
-     
       margin-bottom: 30px;
       font-size: 1.8rem;
+    }
+
+    .mark-tools-info {
+      text-transform: unset !important;
+      font-size: 1.3rem !important;
     }
   }
 

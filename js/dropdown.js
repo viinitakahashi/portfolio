@@ -38,3 +38,11 @@ dropdowns.forEach(dropdown => {
         });
     });
 });
+
+   const button = document.getElementById("toggleButton");
+    const arrow = document.getElementById("arrow");
+
+    button.addEventListener("click", () => {
+      arrow.classList.toggle("rotate");
+      arrow.classList.toggle("arrowWhite");
+    });

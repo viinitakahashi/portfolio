@@ -30,7 +30,7 @@ h1 {
     margin-left: 50px;
     height: 260px;
     width: 260px;
-    background-image: url('https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg');
+    background-image: url('https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-line.svg');
     // background-color: variables.$color-primary;
     // border-radius: 100%;
     background-repeat: no-repeat;
@@ -61,8 +61,8 @@ h1 {
     h2 {
       &::before {
         content: '|';
-        width: 20px;
-        padding: 2px;
+        font-size: 2rem;
+        padding: 5px;
         color: variables.$color-secondary;
       }
       margin-bottom: 20px;
@@ -85,6 +85,20 @@ h1 {
         border: 1px solid variables.$color-primary;
       }
     }
+  }
+
+  .about-more-me {
+    margin-top: 5px;
+    margin-left: 6px;
+    transition: variables.$second-transition ease;
+    font-size: 1rem;
+    &:hover {
+      color: variables.$color-secondary !important;
+    }
+    .bi-mortarboard {
+      font-size: 1.5rem;
+    color: variables.$color-secondary !important;
+  }
   }
 }
 

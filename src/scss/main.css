@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -10,11 +10,11 @@
 }
 
 h1, h2, a, li, button {
-  font-family: "Source Sans 3", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 span, cite {
-  color: #1E1E1E;
+  color: #444;
 }
 
 mark {
@@ -28,7 +28,7 @@ mark {
 }
 
 .selected {
-  color: #1E1E1E;
+  color: #444;
   font-weight: 600;
 }
 
@@ -41,11 +41,11 @@ mark {
 }
 
 li {
-  color: #1E1E1E;
+  color: #444;
   font-weight: 700;
 }
 li:hover {
-  color: #1E1E1E;
+  color: #444;
 }
 
 i {
@@ -53,17 +53,13 @@ i {
 }
 
 .bi {
-  color: #1E1E1E;
-}
-
-.bi-telegram {
-  font-size: 1.5rem;
+  color: #444;
 }
 
 .bi-brightness-high-fill,
 .bi-moon-stars-fill {
   font-size: 1.1em;
-  color: #222;
+  color: #444;
 }
 
 .projects .projects_text {
@@ -71,7 +67,7 @@ i {
 }
 .projects .projects_text h2 {
   text-transform: uppercase;
-  color: #1E1E1E;
+  color: #444;
 }
 .projects .projects_search button {
   color: #fff;
@@ -81,13 +77,13 @@ i {
 body {
   box-sizing: border-box;
   transition: background 0.4s linear;
-  background: #FAFAFA;
+  background: #fff;
 }
 body::-webkit-scrollbar {
   width: 15px;
 }
 body::-webkit-scrollbar-thumb {
-  background-color: #1E1E1E;
+  background-color: #444;
 }
 
 * {
@@ -100,7 +96,6 @@ body::-webkit-scrollbar-thumb {
 .bi {
   padding-right: 5px;
   font-size: 1.1rem;
-  color: #fff !important;
 }
 
 i {
@@ -109,7 +104,7 @@ i {
 
 mark {
   font-size: 2.5rem !important;
-  color: #9C4DFF !important;
+  color: #9F52FF !important;
 }
 
 header {
@@ -145,13 +140,13 @@ nav {
   border-radius: 50px;
 }
 .nav-list li a:hover {
-  border: 1px solid #9C4DFF !important;
+  border: 1px solid #9F52FF !important;
 }
 
 .active-link {
   color: #00BFFF;
-  border: 1px solid #9C4DFF !important;
-  color: #9C4DFF;
+  border: 1px solid #9F52FF !important;
+  color: #9F52FF;
 }
 
 .mobile-menu {
@@ -164,7 +159,7 @@ nav {
 .mobile-menu div {
   width: 32px;
   height: 2px;
-  background-color: #9C4DFF;
+  background-color: #9F52FF;
   margin: 8px;
   transition: 0.3s;
 }
@@ -206,7 +201,7 @@ nav {
     width: 80vw;
     height: 100vh;
     background-color: #fff;
-    border: 1px solid #9C4DFF;
+    border: 1px solid #9F52FF;
     flex-direction: column;
     align-items: center;
     justify-content: start;
@@ -227,7 +222,7 @@ nav {
     opacity: 0; /* some até a animação rodar */
   }
   .nav-list li a {
-    color: #1E1E1E;
+    color: #444;
   }
   .mobile-menu {
     display: block !important;
@@ -237,7 +232,7 @@ mark {
   font-family: "Bebas Neue", sans-serif !important;
   font-weight: 600;
   background-color: transparent;
-  color: #1E1E1E;
+  color: #444;
   font-size: 1.6rem;
 }
 
@@ -262,7 +257,7 @@ h1 {
   margin-left: 50px;
   height: 260px;
   width: 260px;
-  background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg");
+  background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-line.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -282,7 +277,7 @@ h1 {
 }
 .home .home_text h1 {
   font-size: 2.5em;
-  color: #1E1E1E;
+  color: #444;
   margin-bottom: 15px;
 }
 .home .home_text h2 {
@@ -291,9 +286,9 @@ h1 {
 }
 .home .home_text h2::before {
   content: "|";
-  width: 20px;
-  padding: 2px;
-  color: #9C4DFF;
+  font-size: 2rem;
+  padding: 5px;
+  color: #9F52FF;
 }
 .home .home_text p {
   font-size: 1.7rem;
@@ -304,9 +299,22 @@ h1 {
   gap: 50px;
 }
 .home .home_text .nav_button a {
-  color: #1E1E1E;
+  color: #444;
   padding: 10px 20px;
-  border: 1px solid #1E1E1E;
+  border: 1px solid #444;
+}
+.home .about-more-me {
+  margin-top: 5px;
+  margin-left: 6px;
+  transition: 0.4s ease;
+  font-size: 1rem;
+}
+.home .about-more-me:hover {
+  color: #9F52FF !important;
+}
+.home .about-more-me .bi-mortarboard {
+  font-size: 1.5rem;
+  color: #9F52FF !important;
 }
 
 /* tools */
@@ -329,11 +337,14 @@ h1 {
 }
 .tools .tools-information h2 {
   padding: 20px;
-  text-transform: uppercase;
-  color: #9C4DFF !important;
+  color: #9F52FF !important;
   font-weight: 800;
   margin-bottom: 30px;
   font-size: 1.8rem;
+}
+.tools .tools-information .mark-tools-info {
+  text-transform: unset !important;
+  font-size: 1.3rem !important;
 }
 .tools .tools-container {
   display: flex;
@@ -392,11 +403,11 @@ h1 {
 .section-table-points .points h1 {
   font-size: 2rem;
   animation: blinks 1.3s infinite;
-  color: #1E1E1E;
+  color: #444;
   font-weight: 800;
 }
 .section-table-points .points p {
-  color: #121212;
+  color: #111;
   font-size: 1.5rem;
 }
 
@@ -415,7 +426,7 @@ h1 {
   right: 0;
 }
 .dropdown .select {
-  border: 1px solid #9C4DFF;
+  border: 1px solid #9F52FF;
   border-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -425,11 +436,10 @@ h1 {
   padding: 18px;
   margin-top: 10px;
   border-radius: 2px;
-  background-color: #9C4DFF;
   border-radius: 50px;
 }
-.dropdown .select span {
-  color: #fff;
+.dropdown .select .selected {
+  color: #9F52FF;
 }
 .dropdown .select:hover {
   display: flex;
@@ -437,12 +447,12 @@ h1 {
   align-items: center;
 }
 .dropdown .select.select-clicked {
-  border: 1px solid #9C4DFF;
+  border: 1px solid #9F52FF;
   border-radius: 10px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 0px;
-  border: 1px solid #9C4DFF;
-  background-color: #9C4DFF;
+  border: 1px solid #9F52FF;
+  background-color: #9F52FF;
 }
 .dropdown .caret {
   width: 0;
@@ -454,11 +464,11 @@ h1 {
   transform: rotate(180deg);
 }
 .dropdown .menu {
-  border: 1px solid #9C4DFF;
+  border: 1px solid #9F52FF;
   border-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
-  padding: 0.2em 0.8em;
+  padding: 0.2em 0em;
   position: absolute;
   margin-top: 15px;
   top: 3.1em;
@@ -468,25 +478,24 @@ h1 {
   opacity: 0;
   display: none;
   transition: 0.2s;
-  background-color: #FAFAFA;
+  background-color: #fff;
 }
-.dropdown .menu li {
-  padding: 0.7em 0.5em;
-  margin: 0.3em 0;
-  cursor: pointer;
+.dropdown .menu .menu-links {
+  display: flex;
+  flex-direction: column;
+}
+.dropdown .menu .menu-links .contact-link {
+  border: none;
+  padding: 20px 20px;
+  width: 100%;
   border: 1px solid transparent;
 }
-.dropdown .menu li:hover {
-  border: 1px solid #9C4DFF;
+.dropdown .menu .menu-links .contact-link:hover {
+  border: 1px solid #9F52FF;
 }
 .dropdown .menu.menu-open {
   display: block;
   opacity: 1;
-}
-
-.bi-telegram {
-  color: #fff;
-  padding-right: 20px;
 }
 
 .checkbox {
@@ -502,7 +511,7 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid #9C4DFF;
+  border: 1px solid #9F52FF;
   border-radius: 20px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -519,7 +528,7 @@ h1 {
   border-radius: 50%;
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;
-  background-color: #9C4DFF;
+  background-color: #9F52FF;
   position: absolute;
   left: 5px;
   top: 5px;
@@ -528,6 +537,34 @@ h1 {
   width: 22px;
   transform: translateX(0);
   transition: transform 0.3s linear;
+}
+
+#toggleButton {
+  color: inherit;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.arrow {
+  display: inline-block;
+  transition: transform 0.3s ease;
+  font-size: 1.2rem;
+  color: #9F52FF;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+.arrowWhite {
+  color: #fff !important;
+}
+
+.contact-link .bi {
+  color: #9F52FF !important;
 }
 
 .container {
@@ -556,8 +593,16 @@ h1 {
   border-radius: 12px;
   text-decoration: none;
   border: 2px solid transparent;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 10px #9F52FF;
   transition: 0.3s ease;
+}
+
+.card-item {
+  filter: blur(0.4px);
+}
+
+.card-item:hover {
+  filter: blur(0px);
 }
 
 .card-list .card-item .card-link:active {
@@ -565,7 +610,8 @@ h1 {
 }
 
 .card-list .card-item .card-link:hover {
-  border-color: #9C4DFF;
+  border-color: #9F52FF;
+  scale: 1.04;
 }
 
 .card-list .card-link .card-image {
@@ -575,10 +621,6 @@ h1 {
      object-fit: cover;
   border-radius: 10px;
   transition: 0.4s;
-}
-
-.card-list .card-link:hover .card-image {
-  scale: 1.02;
 }
 
 .card-link_text {
@@ -607,7 +649,7 @@ h1 {
   align-items: center;
   gap: 5px;
   transition: 0.4s ease;
-  background-color: #1E1E1E;
+  background-color: #444;
   border: 1px solid transparent;
   color: #fff;
 }
@@ -617,8 +659,8 @@ h1 {
 }
 
 .card-item:hover .badge {
-  background-color: #9C4DFF !important;
-  border: 1px solid #9C4DFF;
+  background-color: #9F52FF !important;
+  border: 1px solid #9F52FF;
   color: #fff;
 }
 
@@ -643,12 +685,12 @@ h2 {
   margin: 30px 0 5px;
   background: none;
   cursor: pointer;
-  border: 2px solid #9C4DFF;
+  border: 2px solid #9F52FF;
   transition: 0.4s ease;
 }
 
 .card-list .card-link:hover .card-button {
-  background: #9C4DFF;
+  background: #9F52FF;
 }
 
 .card-list .card-link:hover .card-button i {
@@ -656,7 +698,8 @@ h2 {
 }
 
 button .bi {
-  color: #1E1E1E !important;
+  margin-left: 3px;
+  color: #444 !important;
 }
 
 i {
@@ -664,14 +707,14 @@ i {
 }
 
 .card-item:hover i {
-  color: #9C4DFF;
+  color: #9F52FF;
 }
 
 .card-wrapper .swiper-pagination-bullet {
   height: 15px;
   width: 15px;
   opacity: 0.6;
-  background: #9C4DFF;
+  background: #9F52FF;
   margin-top: -50px;
 }
 
@@ -680,12 +723,19 @@ i {
 }
 
 .card-wrapper .swiper-slide-button {
-  color: #9C4DFF;
+  padding: 10px;
+  border: 1px solid #9F52FF;
+  border-radius: 100%;
   margin-top: -50px;
+  transition: 0.4s ease;
+}
+.card-wrapper .swiper-slide-button:hover {
+  color: #fff !important;
+  background-color: #9F52FF;
 }
 
 .acessar {
-  color: #9C4DFF;
+  color: #9F52FF;
   padding: 8px 14px;
   font-weight: 600;
   border-radius: 6px;
@@ -706,7 +756,7 @@ i {
 }
 
 .dark {
-  background-color: #121212 !important;
+  background-color: #111 !important;
 }
 
 .white-color {

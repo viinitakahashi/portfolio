@@ -15,11 +15,10 @@
     padding: 18px;
     margin-top: 10px;
     border-radius: 2px;
-    background-color: variables.$color-secondary;
     border-radius: variables.$border-radius;
 
-    span {
-      color: #fff;
+    .selected {
+      color: variables.$color-secondary;
     }
 
     &:hover {
@@ -46,7 +45,7 @@
 
   .menu {
     @include mixins.border(1px solid variables.$color-secondary, 0px, 0px, 0px);
-    padding: 0.2em 0.8em;
+    padding: 0.2em 0em;
     position: absolute;
     margin-top: 15px;
     top: 3.1em;
@@ -57,18 +56,25 @@
     display: none;
     transition: 0.2s;
     background-color: variables.$color-background;
+
+    .menu-links {
+      display: flex;
+      flex-direction: column;
+  
+      .contact-link {
+        border: none;
+        padding: 20px 20px;
+        width: 100%;
+        border: 1px solid transparent;
+        &:hover {
+          border: 1px solid variables.$color-secondary;
+        }
+      } 
     
-
-    li {
-      padding: 0.7em 0.5em;
-      margin: 0.3em 0;
-      cursor: pointer;
-      border: 1px solid transparent;
-
-      &:hover {
-        border: 1px solid variables.$color-secondary;
-      }
     }
+
+
+
 
     &.menu-open {
       display: block;
@@ -77,10 +83,6 @@
   }
 }
 
-.bi-telegram {
-  color: #fff;
-  padding-right: 20px;
-}
 
 .checkbox {
   opacity: 0;
@@ -115,4 +117,35 @@
     transform: translateX(0);
     transition: transform 0.3s linear;
   }
+}
+
+
+#toggleButton {
+
+
+  color: inherit;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.arrow {
+  display: inline-block;
+  transition: transform 0.3s ease;
+  font-size: 1.2rem;
+  color: variables.$color-secondary;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+.arrowWhite {
+  color: #fff !important;
+}
+
+.contact-link .bi {
+  color: variables.$color-secondary !important;
 }
