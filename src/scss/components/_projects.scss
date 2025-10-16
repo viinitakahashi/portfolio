@@ -25,6 +25,7 @@
     border-radius: 12px;
     text-decoration: none;
     border: 2px solid transparent;
+    
     box-shadow: 0 2px 10px variables.$color-secondary;
     transition: 0.3s ease;
 }
@@ -53,10 +54,13 @@
     object-fit: cover;
     border-radius: 10px;
     transition: variables.$second-transition;
+    border-bottom-left-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
 }
 
 .card-link_text {
     padding: 50px 20px;
+    padding-bottom: 30px;
 }
 
 .badge-icons {
@@ -66,7 +70,7 @@
 }
 
 .card-list .card-link .badge {
-    color: #fff;
+    color: #fff !important;
     padding: 8px 20px;
     font-size: 0.95rem;
     font-weight: 500;
@@ -82,10 +86,10 @@
     transition: variables.$second-transition ease;
     background-color: variables.$color-primary;
     border: 1px solid transparent;
-    color: #fff;
+    color: #fff !important;
 }
 
-.badge p  {
+.badge .bi {
     color: #fff !important;
 }
 
@@ -151,6 +155,8 @@ i {
     margin-top: -50px;
 }
 
+
+
 .card-wrapper .swiper-pagination-bullet-active {
     opacity: 1;
 }
@@ -161,13 +167,16 @@ i {
     border-radius: 100%;
     margin-top: -50px;
     transition: variables.$second-transition ease;
+    color: variables.$color-secondary !important;
+    transition: variables.$second-transition;
 
     &:hover {
+        border: #fff;
         color: #fff !important;
+
         background-color: variables.$color-secondary;
     }
 }
-
 
 // 
 .acessar{
@@ -189,4 +198,3 @@ color: variables.$color-secondary;
   filter: blur(0);
   pointer-events: auto;
 }
-

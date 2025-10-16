@@ -3,15 +3,18 @@
 body {
   box-sizing: border-box;
   transition: background 0.4s linear;
-  background: variables.$color-background;
+  background-color: variables.$color-background;
 
 
   &::-webkit-scrollbar {
-    width: 15px;
+    width: 10px;
   }
 
+  &::-webkit-scrollbar {
+    height: 0px;
+  }
   &::-webkit-scrollbar-thumb {
-    background-color: variables.$color-primary;
+    background-color: variables.$color-secondary;
   }
 }
 
@@ -34,4 +37,8 @@ i {
 mark {
   font-size: 2.5rem !important;
   color: variables.$color-secondary !important;
+}
+
+a:visited {
+  color: inherit !important; /* pega a cor do elemento pai */
 }

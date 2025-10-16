@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="./src/scss/main.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+        
 </head>
 <body>
     <header>
@@ -21,9 +23,9 @@
             </div>
 
             <ul class="nav-list">
-                <li><a href="" class="active-link">Inicio</a></li>
-                <li><a href="">Sobre</a></li>
-                <li><a href="">Projetos</a></li>
+                <li><a href="" class="active-link">Home</a></li>
+                <li><a href="">Portfólio</a></li>
+                <li><a href="">Serviços</a></li>
 
                 <li>
                     <input type="checkbox" class="checkbox" id="checkbox">
@@ -45,17 +47,17 @@
     <main>
         <section class="home">
             <div class="home_circle">
-                <img src="https://png.pngtree.com/png-clipart/20240826/original/pngtree-cartoon-programmer-png-image_15854229.png" alt="">
+                <img src="/public/img/my.png" alt="">
             </div>
             <div class="home_text">
-                <h1>Desenvolvedor <br> <mark>Full-Stack</mark> & <mark>Mobile</mark></h1>
-                <h2>João Vinícius Fernandes</h2>
+                <h1> <mark>Vinícius <br> Fernandes</mark></h1>
+                <h2>Programador Full-Stack</h2>
                 <div class="nav_button">
                 <div class="dropdown">
                     <div class="select" id="toggleButton">
                         <span class="selected">
                             <span id="arrow" class="arrow">▼</span>
-                            Entrar em Contato
+                             Entrar em contato
                         </span>
                         <div class="caret"></div>
                     </div>
@@ -63,34 +65,36 @@
                         <div class="menu-links">
 
                             <a href="https://www.linkedin.com/in/joavincus/" class="contact-link">
-                                <i class="bi bi-linkedin"></i>
-                                Linkedin
-                            </a>
-                        
-                            <a href="#" class="contact-link">
-                                <i class="bi bi-whatsapp"></i>
-                                Whatsapp
+                              <i class="bi bi-linkedin"></i> 
+                                linkedin
                             </a>
 
+                        <a href="#" class="contact-link">
+                            <i class="bi bi-whatsapp"></i>
+                            whatsapp
+                        </a>
+
+                                                
                         <a href="#" class="contact-link">
                             <i class="bi bi-instagram"></i>
                             Instagram
                         </a>
+                        
                         </div>
 
                     </ul>
                 </div>
             </div>
-                <p></p>
-                <p>Técnico em informática, uno hardware e software para garantir o melhor desempenho e perfomance em uma aplicação.</p>
-                <br>
-                <a class="about-more-me" href=""><i class="bi bi-mortarboard"></i>Formação e Cursos</a>
+                <p style="font-weight: 100 !important;">Sou Programador Full-Stack e Técnico em Informática. Ofereço soluções digitais para Empresas e Instituições através da minha empresa</p>
+                <p style="margin-top: 8px;">
+                     <a href="#"><i class="bi bi-mortarboard-fill"></i>Cursos & Formações</a>
+                </p>
+                <!-- <a class="about-more-me" href=""><i class="bi bi-mortarboard"></i>Formação e Cursos</a> -->
         </section>
 
         <div class="section" style="display: flex; flex-direction: row; align-items: center; margin-left: 80px; margin-bottom: 50px;">
-            <h2><i  style="font-size: 4.2rem; color: #9C4DFF !important; padding-right: 20px;" class="bi bi-code-slash"></i></h2>
-            <h2 class="title-section" style="font-size: 2.4rem; color: #222;">Conheça meus <mark>Trabalhos</mark> <br> & <mark>Projetos</mark> Desenvolvidos.</h2>
-
+            <h2 class="section-icon"><i style="font-size: 4.2rem; color: #00CC66 !important; padding-right: 20px; margin-left: 32px" class="devicon-react-original colored"></i></h2>
+            <h2 class="title-section" style="font-size: 2.1rem; color: #222; text-transform: uppercase;">Conheça meus <mark>Trabalhos</mark> <br> & <mark>Projetos</mark> Desenvolvidos.</h2> 
         </div>
 
         <div class="container swiper">
@@ -102,6 +106,7 @@
                         <img src="https://sketchfav.com/rawimg/free-figma-resources/3legant-e-commerce-mobile-responsive-g62.jpg" alt="" class="card-image">
                         <div class="card-link_text">
                             <p class="badge e-commerce"><i class="bi bi-cart-fill"></i> E-commerce</p>
+                            <p class="badge e-commerce"><i class="bi bi-cart-fill"></i> API'S</p>
                             <h2 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
                             <button class="card-button"><i class="bi bi-arrow-right"></i></button>
                             <span class="acessar">Acessar</span>
@@ -161,11 +166,14 @@
 
         <section class="tools">
             <div class="tools-information">
-                <h2>Linguagens de Programação</h2>
+                <div class="tools-information_title">
+                    <i class="bi bi-code-slash"></i>
+                    <h2>Linguagens de Programação</h2>
+                </div>
                 <div class="tools-container">
                     <div class="tools-img">
                         <img width="55px"
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" />
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" />
                         <img width="55px"
                             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg" />
                         <img width="55px"
@@ -180,15 +188,18 @@
             </div>
 
             <div class="tools-information">
+                <div class="tools-information_title">
+                <i class="bi bi-stack"></i>
                 <h2>Frameworks & Bibliotecas</h2>
+                </div>
                 <div class="tools-container">
                     <div class="tools-img">
                         <img width="50px"
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg" />
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg" />
                         <img width="50px"
                             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
-                        <img width="55px"
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dot-net/dot-net-plain-wordmark.svg" />
+                        <img width="50px"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" />
                         <img width="50px"
                             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" />
                         <img width="55px"
@@ -202,17 +213,20 @@
             </div>
 
             <div class="tools-information">
-                <h2>Softwares <br> & Ferramentas</h2>
+                  <div class="tools-information_title">
+                    <i class="bi bi-gear"></i>
+                <h2>Softwares &<br> Ferramentas</h2>
+                </div>
                 <div class="tools-container">
                     <div class="tools-img">
                         <img width="53px"
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/visualstudio/visualstudio-original.svg" />
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-line.svg" />
                         <img width="55px"
                             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" />
                         <img width="55px"
                             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" />
                         <img width="55px"
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" />
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg" />
                         <img width="55px"
                             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-plain.svg" />
                     </div>

@@ -9,7 +9,7 @@
   text-decoration: none;
 }
 
-h1, h2, a, li, button {
+h1, h2, a, li, button, span {
   font-family: "Inter", sans-serif;
 }
 
@@ -77,13 +77,16 @@ i {
 body {
   box-sizing: border-box;
   transition: background 0.4s linear;
-  background: #fff;
+  background-color: #F9F9F9;
 }
 body::-webkit-scrollbar {
-  width: 15px;
+  width: 10px;
+}
+body::-webkit-scrollbar {
+  height: 0px;
 }
 body::-webkit-scrollbar-thumb {
-  background-color: #444;
+  background-color: #00CC66;
 }
 
 * {
@@ -104,15 +107,24 @@ i {
 
 mark {
   font-size: 2.5rem !important;
-  color: #9F52FF !important;
+  color: #00CC66 !important;
+}
+
+a:visited {
+  color: inherit !important; /* pega a cor do elemento pai */
 }
 
 header {
+  top: 0;
+  position: sticky;
   z-index: 10 !important;
+  background: #F9F9F9;
+  padding: 5px;
 }
 
 nav {
-  padding-top: 15px;
+  transition: background 0.4s linear !important;
+  padding-top: 0px;
   display: flex;
   align-items: center;
   height: 10vh;
@@ -140,13 +152,13 @@ nav {
   border-radius: 50px;
 }
 .nav-list li a:hover {
-  border: 1px solid #9F52FF !important;
+  border: 1px solid #00CC66 !important;
 }
 
 .active-link {
   color: #00BFFF;
-  border: 1px solid #9F52FF !important;
-  color: #9F52FF;
+  border: 1px solid #00CC66 !important;
+  color: #00CC66;
 }
 
 .mobile-menu {
@@ -159,7 +171,7 @@ nav {
 .mobile-menu div {
   width: 32px;
   height: 2px;
-  background-color: #9F52FF;
+  background-color: #00CC66;
   margin: 8px;
   transition: 0.3s;
 }
@@ -201,7 +213,7 @@ nav {
     width: 80vw;
     height: 100vh;
     background-color: #fff;
-    border: 1px solid #9F52FF;
+    border: 1px solid #00CC66;
     flex-direction: column;
     align-items: center;
     justify-content: start;
@@ -242,6 +254,7 @@ h1 {
 }
 
 .home {
+  margin-top: -10px !important;
   height: 100vh;
   display: flex;
   justify-content: space-around;
@@ -257,14 +270,15 @@ h1 {
   margin-left: 50px;
   height: 260px;
   width: 260px;
-  background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-line.svg");
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/2367px-Vue.js_Logo_2.svg.png");
+  border-radius: 15px !important;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
   margin-right: 85px;
 }
 .home .home_circle img {
-  margin-top: 40px;
+  margin-top: 5px;
   margin-left: -160px;
   width: 380px;
 }
@@ -276,22 +290,43 @@ h1 {
   margin-top: -150px;
 }
 .home .home_text h1 {
+  text-transform: uppercase;
   font-size: 2.5em;
   color: #444;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 .home .home_text h2 {
   margin-bottom: 20px;
+  font-weight: 500 !important;
   color: #222;
 }
 .home .home_text h2::before {
   content: "|";
   font-size: 2rem;
   padding: 5px;
-  color: #9F52FF;
+  color: #00CC66;
+  margin-bottom: 5px !important;
 }
 .home .home_text p {
-  font-size: 1.7rem;
+  line-height: 1.4;
+  margin-left: 5px;
+  font-size: 1.6rem;
+}
+.home .home_text p a {
+  font-style: italic;
+  margin-top: 20px;
+  font-weight: 500;
+  color: #444;
+  transition: 0.4s ease-in-out;
+}
+.home .home_text p a:hover {
+  cursor: pointer;
+}
+.home .home_text p a i {
+  margin-right: 10px;
+  padding: 2px 6px;
+  color: #00CC66 !important;
+  font-size: 1.8rem;
 }
 .home .home_text .nav_button {
   display: flex;
@@ -304,17 +339,21 @@ h1 {
   border: 1px solid #444;
 }
 .home .about-more-me {
+  padding: 5px;
   margin-top: 5px;
   margin-left: 6px;
   transition: 0.4s ease;
-  font-size: 1rem;
+  font-size: 1.2rem !important;
 }
 .home .about-more-me:hover {
-  color: #9F52FF !important;
+  color: #00CC66 !important;
 }
 .home .about-more-me .bi-mortarboard {
-  font-size: 1.5rem;
-  color: #9F52FF !important;
+  font-size: 1.8rem;
+  color: #00CC66 !important;
+  margin-right: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 /* tools */
@@ -335,12 +374,23 @@ h1 {
   width: 30%;
   font-size: 1.3rem !important;
 }
-.tools .tools-information h2 {
+.tools .tools-information .tools-information_title {
+  display: flex;
+  align-items: center !important;
+}
+.tools .tools-information .tools-information_title i {
+  padding: 15px;
+  border-radius: 4px;
+  color: #00CC66 !important;
+  font-size: 2.5rem !important;
+}
+.tools .tools-information .tools-information_title h2 {
   padding: 20px;
-  color: #9F52FF !important;
+  padding-left: 0px;
   font-weight: 800;
   margin-bottom: 30px;
   font-size: 1.8rem;
+  text-transform: uppercase;
 }
 .tools .tools-information .mark-tools-info {
   text-transform: unset !important;
@@ -407,7 +457,7 @@ h1 {
   font-weight: 800;
 }
 .section-table-points .points p {
-  color: #111;
+  color: #222222;
   font-size: 1.5rem;
 }
 
@@ -426,7 +476,7 @@ h1 {
   right: 0;
 }
 .dropdown .select {
-  border: 1px solid #9F52FF;
+  border: 1px solid #00CC66;
   border-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -435,11 +485,7 @@ h1 {
   transition: background 0.3s;
   padding: 18px;
   margin-top: 10px;
-  border-radius: 2px;
   border-radius: 50px;
-}
-.dropdown .select .selected {
-  color: #9F52FF;
 }
 .dropdown .select:hover {
   display: flex;
@@ -447,12 +493,12 @@ h1 {
   align-items: center;
 }
 .dropdown .select.select-clicked {
-  border: 1px solid #9F52FF;
+  border: 1px solid #00CC66;
   border-radius: 10px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 0px;
-  border: 1px solid #9F52FF;
-  background-color: #9F52FF;
+  border: 1px solid #00CC66;
+  background-color: #00CC66;
 }
 .dropdown .caret {
   width: 0;
@@ -464,7 +510,7 @@ h1 {
   transform: rotate(180deg);
 }
 .dropdown .menu {
-  border: 1px solid #9F52FF;
+  border: 1px solid #00CC66;
   border-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -478,20 +524,30 @@ h1 {
   opacity: 0;
   display: none;
   transition: 0.2s;
-  background-color: #fff;
+  background-color: #F9F9F9;
 }
 .dropdown .menu .menu-links {
   display: flex;
   flex-direction: column;
+  text-transform: uppercase;
 }
 .dropdown .menu .menu-links .contact-link {
   border: none;
   padding: 20px 20px;
   width: 100%;
   border: 1px solid transparent;
+  transition: 0.4s ease;
 }
 .dropdown .menu .menu-links .contact-link:hover {
-  border: 1px solid #9F52FF;
+  background-color: #00CC66;
+  color: #fff;
+  scale: 1.05;
+  border: 1px solid #00CC66;
+  font-size: 1rem;
+}
+.dropdown .menu .menu-links .contact-link:hover .bi {
+  font-size: 1.1rem;
+  color: #fff !important;
 }
 .dropdown .menu.menu-open {
   display: block;
@@ -511,12 +567,12 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid #9F52FF;
+  border: 1px solid #00CC66;
   border-radius: 20px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   cursor: pointer;
-  padding: 17px 10px;
+  padding: 17px 8px;
   position: relative;
   height: 24px;
   width: 100px;
@@ -528,7 +584,7 @@ h1 {
   border-radius: 50%;
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;
-  background-color: #9F52FF;
+  background-color: #00CC66;
   position: absolute;
   left: 5px;
   top: 5px;
@@ -552,7 +608,7 @@ h1 {
   display: inline-block;
   transition: transform 0.3s ease;
   font-size: 1.2rem;
-  color: #9F52FF;
+  color: #00CC66;
 }
 
 .rotate {
@@ -564,7 +620,7 @@ h1 {
 }
 
 .contact-link .bi {
-  color: #9F52FF !important;
+  color: #00CC66 !important;
 }
 
 .container {
@@ -593,7 +649,7 @@ h1 {
   border-radius: 12px;
   text-decoration: none;
   border: 2px solid transparent;
-  box-shadow: 0 2px 10px #9F52FF;
+  box-shadow: 0 2px 10px #00CC66;
   transition: 0.3s ease;
 }
 
@@ -610,7 +666,7 @@ h1 {
 }
 
 .card-list .card-item .card-link:hover {
-  border-color: #9F52FF;
+  border-color: #00CC66;
   scale: 1.04;
 }
 
@@ -621,10 +677,13 @@ h1 {
      object-fit: cover;
   border-radius: 10px;
   transition: 0.4s;
+  border-bottom-left-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
 }
 
 .card-link_text {
   padding: 50px 20px;
+  padding-bottom: 30px;
 }
 
 .badge-icons {
@@ -634,7 +693,7 @@ h1 {
 }
 
 .card-list .card-link .badge {
-  color: #fff;
+  color: #fff !important;
   padding: 8px 20px;
   font-size: 0.95rem;
   font-weight: 500;
@@ -651,16 +710,16 @@ h1 {
   transition: 0.4s ease;
   background-color: #444;
   border: 1px solid transparent;
-  color: #fff;
+  color: #fff !important;
 }
 
-.badge p {
+.badge .bi {
   color: #fff !important;
 }
 
 .card-item:hover .badge {
-  background-color: #9F52FF !important;
-  border: 1px solid #9F52FF;
+  background-color: #00CC66 !important;
+  border: 1px solid #00CC66;
   color: #fff;
 }
 
@@ -685,12 +744,12 @@ h2 {
   margin: 30px 0 5px;
   background: none;
   cursor: pointer;
-  border: 2px solid #9F52FF;
+  border: 2px solid #00CC66;
   transition: 0.4s ease;
 }
 
 .card-list .card-link:hover .card-button {
-  background: #9F52FF;
+  background: #00CC66;
 }
 
 .card-list .card-link:hover .card-button i {
@@ -707,14 +766,14 @@ i {
 }
 
 .card-item:hover i {
-  color: #9F52FF;
+  color: #00CC66;
 }
 
 .card-wrapper .swiper-pagination-bullet {
   height: 15px;
   width: 15px;
   opacity: 0.6;
-  background: #9F52FF;
+  background: #00CC66;
   margin-top: -50px;
 }
 
@@ -724,18 +783,21 @@ i {
 
 .card-wrapper .swiper-slide-button {
   padding: 10px;
-  border: 1px solid #9F52FF;
+  border: 1px solid #00CC66;
   border-radius: 100%;
   margin-top: -50px;
   transition: 0.4s ease;
+  color: #00CC66 !important;
+  transition: 0.4s;
 }
 .card-wrapper .swiper-slide-button:hover {
+  border: #fff;
   color: #fff !important;
-  background-color: #9F52FF;
+  background-color: #00CC66;
 }
 
 .acessar {
-  color: #9F52FF;
+  color: #00CC66;
   padding: 8px 14px;
   font-weight: 600;
   border-radius: 6px;
@@ -756,7 +818,7 @@ i {
 }
 
 .dark {
-  background-color: #111 !important;
+  background-color: #222222 !important;
 }
 
 .white-color {

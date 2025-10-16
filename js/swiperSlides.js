@@ -3,10 +3,10 @@ new Swiper('.card-wrapper', {
   spaceBetween: 30,
 
   // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true
-  },
+  // pagination: {
+  //   el: '.swiper-pagination',
+  //   clickable: true
+  // },
 
   // Navigation arrows
   navigation: {

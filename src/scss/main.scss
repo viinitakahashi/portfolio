@@ -1,7 +1,6 @@
 // Abstracts
 @use 'abstracts/variables';
 @use 'abstracts/mixins';
-@use 'abstracts/functions';
 
 // Base
 @use 'base/reset';
@@ -18,6 +17,7 @@
 @use 'components/tools';
 @use 'components/points';
 @use 'components/dropdown';
+
 @use 'components/projects';
 
 @use 'utils/dark';
