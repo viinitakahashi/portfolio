@@ -31,7 +31,7 @@ h1 {
     margin-left: 50px;
     height: 260px;
     width: 260px;
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/2367px-Vue.js_Logo_2.svg.png');
+    background-image: url('/public/react_5.png');
     border-radius: 15px !important; 
     // background-color: variables.$color-primary;
     // border-radius: 100%;
@@ -114,25 +114,5 @@ h1 {
         border: 1px solid variables.$color-primary;
       }
     }
-  }
-
-  .about-more-me {
-    padding: 5px;
-    margin-top: 5px;
-    margin-left: 6px;
-    transition: variables.$second-transition ease;
-    font-size: 1.2rem !important;
-
-    &:hover {
-      color: variables.$color-secondary !important;
-    }
-
-    .bi-mortarboard {
-      font-size: 1.8rem;
-      color: variables.$color-secondary !important;
-      margin-right: 10px;
-      border-bottom-left-radius: 10px;
-      border-top-right-radius: 10px;
-  }
   }
 }
