@@ -31,7 +31,7 @@ h1 {
     margin-left: 50px;
     height: 260px;
     width: 260px;
-    background-image: url('/public/react_5.png');
+    background-image: url('https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg');
     border-radius: 15px !important; 
     // background-color: variables.$color-primary;
     // border-radius: 100%;
@@ -81,26 +81,7 @@ h1 {
       margin-left: 5px;
       font-size: 1.6rem;
 
-      a {
-        font-style: italic;
-        margin-top: 20px;
-        font-weight: 500;
-        color: variables.$color-primary;
-        transition: 0.4s ease-in-out;
-        &:hover {
-          cursor: pointer;
-        }
-
-        
-        i {
-          margin-right: 10px;
-          padding: 2px 6px;
-
-          color: variables.$color-secondary !important;
-          font-size: 1.8rem;
-        }
-      }
-
+      
     }
 
     .nav_button {
