@@ -1,0 +1,19 @@
+.about-me {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px;
+    
+    .about-me_circle,
+    .about-me_text {
+        width: 50%;
+    }
+
+    .about-me_circle {
+        .about-me_circle__img {
+            width: 400px;
+            height: 400px;
+            border-radius: 100%;
+            background-color: variables.$color-secondary;
+        }
+    }
+}
